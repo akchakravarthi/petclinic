@@ -1,7 +1,6 @@
 #!/bin/bash
 pipeline {
-    pipeline {
-    agent { dockerfile true }
+    agent none
    stages {     
     stage('Maven Install') {
       agent {         
