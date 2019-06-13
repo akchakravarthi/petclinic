@@ -2,10 +2,10 @@
 pipeline {
     agent none
    stages {     
-    stage('JDK Install') {
+    stage('Maven Install') {
       agent {         
        docker {          
-         image 'openjdk:8-alpine'         
+         image 'maven:3.5' --privileged      
      }       
   }       
   steps {
